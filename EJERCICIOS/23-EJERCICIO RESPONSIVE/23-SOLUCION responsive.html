@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Solución responsive</title>
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+		
+		<style>
+		
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+		
+			#azul {
+				background: #2471A3;
+				height: 60px;
+				margin: 1em;
+			}
+			
+			#rojo {
+				background: #A93226;
+				height: 60px;
+				margin: 1em;
+			}
+			
+			#verde {
+				background: #117A65;
+				margin: 1em;
+				padding: 0.5em;
+			}
+			
+			.naranja {
+				background: #E67E22;
+				height: 100px;
+				margin: 1em;
+			}
+			
+			#morado {
+				background: #512E5F;
+				height: 120px;
+				margin: 1em;
+			}
+			
+			@media (min-width:768px) {
+				#contenedor {
+					display: flex;
+					align-items: stretch;
+				}
+				
+				#rojo {
+					width: 12%;
+					height: auto;
+					/* height: 400px; */
+				}
+				
+				#verde {
+					width: 85%;
+					/* height: 400px; */
+				}
+			}
+			
+			@media (min-width:1280px) {
+				#verde {
+					display: flex;
+					flex-wrap: wrap;
+				}
+				
+				.naranja {
+					width: 46%;
+					height: 200px;
+				}
+			}
+			
+			@media (min-width: 1440px) {
+				.naranja {
+					width: 30%;
+				}
+			}
+		
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<header id="azul"></header>
+		<div id="contenedor">
+			<nav id="rojo"></nav>
+			<section id="verde">
+				<article class="naranja"></article>
+				<article class="naranja"></article>
+				<article class="naranja"></article>
+			</section>
+		</div>
+		<footer id="morado"></footer>
+		
+	</body>
+	
+</html>

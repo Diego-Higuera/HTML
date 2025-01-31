@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Animación</title>
+		<meta charset="utf-8">
+		
+		<style>
+		
+		<!--Crear un cuadrado de color en pantalla que inicialmente se encuentre situado en la esquina superior izquierda de la pantalla.
+		A lo largo del primer 10% de la animación, el cuadrado se convertirá en una figura de un círculo y cambiará de color.
+		Luego, hasta llegar al 50% se desplazará hasta el lateral derecho de la página (a velocidad de la luz),
+		en el siguiente 10% (es decir, al 60), volverá al color y la forma originales y hasta el 100% (to) regresará a su posición original.-->
+		
+			* {
+				margin: 0;
+				padding: 0;
+			}
+		
+			div#caja {
+				width: 150px;
+				height: 150px;
+				background-color: #7dcea0;
+				position: relative;
+				
+				animation-name: animacion;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+			}
+			
+			@keyframes animacion {
+				from {
+					border-radius: 0;
+					background-color: #7dcea0;
+					left: 0;
+				}
+				10% {
+					border-radius: 50%;
+					background-color: #cb4335;
+				}
+				50% {
+					left: calc(100% - 150px);
+				}
+				60% {
+					border-radius: 0;
+					background-color: #7dcea0;
+				}
+				to {
+					left: 0;
+				}
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<div id="caja"></div>
+		
+	</body>
+
+</html>

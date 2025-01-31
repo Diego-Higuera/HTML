@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejercicios con textos</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<script>
+			
+			/* Pedir al usuario que introduzca una frase.
+			A continuación, pedirle que introduzca el tamaño de los fragmentos en los que desea dividirla. 
+			¿Se os ocurre la manera de utilizar la función isNaN() para asegurarnos de que el valor introducido es un número?
+			¿Se os ocurre alguna validación más?
+			Utilizar la función trim para eliminar los posibles espacios innecesarios y sustituir los espacios centrales por asteriscos
+			(sin utilizar la función replaceAll).
+			Finalmente, dividir y mostrar la frase en fragmentos de ese tamaño alternando un fragmento en minúsculas y el siguiente en mayúsculas. */
+			
+			/* Pedir al usuario que introduzca una frase. */
+			var frase = prompt("Introduzca una frase");
+			
+			/* Utilizar la función trim para eliminar los posibles espacios innecesarios y sustituir los espacios centrales por asteriscos (sin utilizar la función replaceAll). */
+			frase = frase.trim();
+			/* ¿Qué hacer si entre palabras hay más de dos espacios? */
+			while ( frase.indexOf("  ") != -1 ) {
+				frase = frase.replace("  ", " ");
+			}
+			while ( frase.indexOf(" ") != -1 ) {
+				frase = frase.replace(" ", "*");
+			}
+			
+			/* A continuación, pedirle que introduzca el tamaño de los fragmentos en los que desea dividirla. ¿Se os ocurre la manera de utilizar la función isNaN() para asegurarnos de que el valor introducido es un número? ¿Se os ocurre alguna validación más? */
+			var texto;
+			do {
+				texto = prompt("Introduzca el tamaño de los fragmentos (1 a " + frase.length + ")");
+			} while( isNaN(texto) || parseInt(texto) < 1 || parseInt(texto) > frase.length );
+			var tamaFragmentos = parseInt(texto);
+			
+			/* Finalmente, dividir y mostrar la frase en fragmentos de ese tamaño alternando un fragmento en minúsculas y el siguiente en mayúsculas. */
+			var fragmento;
+			var contador = 0;
+			do {
+				/* Extraigo un fragmento. */
+				fragmento = frase.substring(0,tamaFragmentos);
+				contador++;
+				if ( contador % 2 == 0 ) {
+					fragmento = fragmento.toUpperCase();
+				} else {
+					fragmento = fragmento.toLowerCase();
+				}
+				document.write("<div>" + fragmento + "</div>");
+				/* Reduzco la frase original quitándole el fragmento que acabo de extraer. */
+				frase = frase.substring(tamaFragmentos);
+			} while ( frase.length > 0 );
+			
+		</script>
+		
+	</body>
+	
+</html>

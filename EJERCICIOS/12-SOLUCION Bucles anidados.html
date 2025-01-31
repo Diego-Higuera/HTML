@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Bucles anidados</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<script>
+		
+			/* Crear un script en Javascript que pinte la tabla de multiplicar del 1 mediante una tabla HTML.
+				Modificar el ejercicio anterior para pedirle al usuario un número del 1 al 10 y
+				utilizarlo para pintar la tabla de multiplicar correspondiente.
+				Con bucles anidados, pintar en la página todas las tablas  de multiplicar del 1 al 10. */
+				
+			/* La tabla del 1. */
+			document.write("<table border='1'>");
+				document.write("<caption>Tabla del 1</caption>");
+				for ( i=1; i<=10; i++ ) {
+					document.write("<tr>");
+						document.write("<td>1 x " + i + "</td>");
+						document.write("<td>" + 1*i + "</td>");
+					document.write("</tr>");
+				}
+			document.write("</table>");
+			
+			/* Pedir un número de tabla al usuario y pintar dicha tabla de multiplicar. */
+			var tablaTexto = prompt("Inserte el número de tabla");
+			var tabla = parseInt(tablaTexto);
+
+			document.write("<table border='1'>");
+				document.write("<caption>Tabla del " + tabla + "</caption>");
+				for ( i=1; i<=10; i++ ) {
+					document.write("<tr>");
+						document.write("<td>" + tabla + " x " + i + "</td>");
+						document.write("<td>" + tabla*i + "</td>");
+					document.write("</tr>");
+				}
+			document.write("</table>");
+			
+			/* Se nos pide ahora, mostrar las diez tablas, del 1 al 10. */
+			for ( tabla=1; tabla<=10; tabla++ ) {
+				document.write("<table border='1'>");
+					document.write("<caption>Tabla del " + tabla + "</caption>");
+					for ( i=1; i<=10; i++ ) {
+						document.write("<tr>");
+							document.write("<td>" + tabla + " x " + i + "</td>");
+							document.write("<td>" + tabla*i + "</td>");
+						document.write("</tr>");
+					}
+				document.write("</table>");
+			}
+		
+		</script>
+		
+	</body>
+
+</html>

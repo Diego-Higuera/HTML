@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>El juego de adivinar el número</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<script>
+		
+		/*Vamos a crear un juego en un script javascript que piense un número (entre 1 y 100) y le pida al usuario que intente adivinarlo.
+		El número se generará aleatoriamente.
+		En la biblioteca virtual tenéis la fórmula para hacerlo.
+		Cada vez que el usuario diga un número, le contestaremos si ha acertado, si su número es más alto que el que ha pensado el programa o si es más bajo.
+		El programa termina cuando el usuario acierta el número con una felicitación.*/
+		
+			/* Lo primero es generar un número entre el 1 y el 100 para que el usuario adivine. */
+			var max = 100;
+			var min = 1; 
+			var aleatorio = parseInt(Math.floor(Math.random()*(max-min + 1)) + min);
+			
+			/* Mientras probamos la aplicación, será necesario conocer dicho número para asegurarnos de que todo funciona bien. Una vez pasemos la aplicación a producción, ocultaremos esta instrucción. */
+			// alert("El número aleatorio es: " + aleatorio);
+			
+			do {
+			
+				/* Pedimos el número. */
+				var numeroTexto = prompt("Adivina el número");
+				var numero = parseInt(numeroTexto);
+				
+				/* Hay que mostrar un mensaje indicando si el número pensado por el ordenador es mayor, menor o si el usuario ha acertado. */
+				
+				if ( aleatorio > numero ) {
+					alert("El número que he pensado es mayor");
+				} else {
+					if ( aleatorio < numero ) {
+						alert("El número que he pensado es menor");
+					} else {
+						if ( aleatorio == numero ) {
+							alert("¡Felicidades! Has acertado el número.");
+						}
+					}
+				}
+				
+			} while ( numero != aleatorio );
+
+		</script>
+		
+	</body>
+
+</html>
