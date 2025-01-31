@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejemplos con la clase Math</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<script>
+			/* Propiedades de Math. */
+			document.write("<div>Valor de e: " + Math.E + "</div>");
+			document.write("<div>Valor de pi: " + Math.PI + "</div>");
+			
+			/* El método abs() devuelve el valor absoluto de un número, es decir, dicho número prescindiendo del signo. */
+			document.write("<div>Math.abs(-7) = " + Math.abs(-7) + "</div>");
+			
+			/* ceil() redondea un número a un entero pero hacia arriba. */
+			document.write("<div>Math.ceil(3.1) = " + Math.ceil(3.1) + "</div>");
+			document.write("<div>Math.ceil(-3.1) = " + Math.ceil(-3.1) + "</div>");
+			
+			/* floor() redondea un número a un entero pero hacia abajo. */
+			document.write("<div>Math.floor(3.9) = " + Math.floor(3.9) + "</div>");
+			document.write("<div>Math.floor(-3.9) = " + Math.floor(-3.9) + "</div>");
+			
+			/* round() redondea un número al entero más cercano. */
+			document.write("<div>Math.round(5.9) = " + Math.round(5.9) + "</div>");
+			document.write("<div>Math.round(5.1) = " + Math.round(5.1) + "</div>");
+			document.write("<div>Math.round(5.5) = " + Math.round(5.5) + "</div>");
+			document.write("<div>Math.round(-5.9) = " + Math.round(-5.9) + "</div>");
+			document.write("<div>Math.round(-5.1) = " + Math.round(-5.1) + "</div>");
+			document.write("<div>Math.round(-5.5) = " + Math.round(-5.5) + "</div>");
+			
+			/* trunc() redondea a un entero simplemente eliminando la parte decimal de un número. */
+			document.write("<div>Math.trunc(6.5) = " + Math.trunc(6.5) + "</div>");
+			
+			/* max() y min() devuelven respectivamente el mayor de dos números o el menor de dos números. */
+			document.write("<div>Math.max(7,3) = " + Math.max(7,3) + "</div>");
+			document.write("<div>Math.min(7,3) = " + Math.min(7,3) + "</div>");
+			
+			/* pow() devuelve el resultado de elevar el primer número al segundo número. */
+			document.write("<div>Math.pow(2,3) = " + Math.pow(2,3) + "</div>");
+			
+			/* random() devuelve un número aleatorio entre 0 y 1 sin llegar nunca al uno. */
+			document.write("<div>Math.random() = " + Math.random() + "</div>");
+			var max = 10;
+			var min = 1; 
+			var aleatorio = parseInt(Math.floor(Math.random()*(max-min + 1)) + min);
+			document.write("<div>Aleatorio entre 1 y 10: " + aleatorio + "</div>");
+			
+			/* sqrt() devuelve la raiz cuadrada de un número. */
+			document.write("<div>Math.sqrt(100) = " + Math.sqrt(100) + "</div>");
+			
+		</script>
+		
+	</body>
+	
+</html>

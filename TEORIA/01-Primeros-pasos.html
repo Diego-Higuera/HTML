@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Primeros pasos con HTML</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<!-- El navegador ignora espacios adicionales y saltos de línea que utilizamos en el código fuente para mejorar su legibilidad. -->
+		<p>En un lugar de la            Mancha 
+		
+		de cuyo nombre no quiero acordarme, 
+		
+		no ha mucho tiempo que vivía          un hidalgo caballero 
+		
+		de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.</p>
+		<!-- En HTML no utilizamos etiquetas para dar formato, sólo para identificar de qué tipo es un contenido. De hecho, si un párrafo está vacío el navegador simplemente no lo muestra. -->
+		<p></p>
+		<p></p>
+		<p></p>
+		<p>Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino.</p>
+		
+		<!-- Las etiquetas hx marcan los distintos niveles de apartados y subapartados de un documento. La hoja de estilos por defecto del navegador, suele pintar estos elementos en tamaños descendentes. No obstante, nunca hay que utilizar etiquetas para dar formato, si no por la semántica de cada elemento. -->
+		<h1>Título de nivel 1</h1>
+		<h2>Título de nivel 2</h2>
+		<h3>Título de nivel 3</h3>
+		<h4>Título de nivel 4</h4>
+		<h5>Título de nivel 5</h5>
+		<h6>Título de nivel 6</h6>
+		
+		<!-- En algunos casos querremos respetar espacios y saltos de línea del código fuente. Para ello, utilizaremos la etiqueta pre. -->
+		<pre>
+1234.567
+  16.77
+ 108.3456
+   2.987
+		</pre>
+		
+		<!-- Pensada para contener información de contacto del autor de la página. -->
+		<address>Miguel de Cervantes Saavedra, #cervantes</address>
+		
+		<!-- Utilizamos br cuando dos fragmentos de texto deben ir en líneas separadas, nunca para dar formato separando forzadamente dos líneas de texto. -->
+		<p>Con diez cañones por banda,<br>
+		viento en popa a toda vela,<br>
+		no corta el mar si no vuela<br>
+		un velero bergantín.</p>
+		
+		<!-- Recordad que las etiquetas en línea deberían ir incluidas dentro de etiquetas en bloque. -->
+		<p>Me importa un <abbr title="Mega electrón Voltio">MeV</abbr>.</p>
+		<!-- En HTML5 la etiqueta acronym está obsoleta y se recomienda utilizar abbr en su lugar. -->
+		<p>Estamos estudiando <acronym title="HyperText Markup Language">HTML</acronym> en clase.</p>
+		<!-- Cita o referencia a otras fuentes. -->
+		<p>Para más información, consulte el <cite>Libro Gordo de Petete, página 156</cite>.</p>
+		<!-- Fragmentos de código de ordenador. -->
+		<p>Con la instrucción <code>for</code> podemos realizar un bucle.</p>
+		<!-- Texto que se elimina (del) y texto que se añade (ins). -->
+		<p>Oferta del mes. Antes <del>1000€</del>, ahora sólo <ins>999,99€</ins></p>
+		<!-- Identificar la primera aparición de un término en un texto. -->
+		<p>Un medicamento <dfn>antipirético</dfn> sirve para disminuir la fiebre.</p>
+		<!-- Distintos niveles de énfasis. -->
+		<p>Énfasis <em>moderado</em>, énfasis <strong>fuerte</strong> y énfasis <strong><em>muy fuerte</em></strong>.</p>
+		<!-- Texto que debe teclear el usuario (kbd), salida de un programa o script (samp) y nombre de una variable o argumento (var). -->
+		<p>Cuando pulsemos la tecla <kbd>F2</kbd>, el texto <samp>Fin del programa</samp> se almacenará en la variable <var>mensaje</var>.</p>
+		<!-- Negrita (b), cursiva (i) y subrayado (u) desaconsejadas en versiones anteriores de HTML pero recuperadas en HTML5. -->
+		<p>Texto en <b>negrita</b>, <i>cursiva</i> y <u>subrayado</u>.</p>
+		<!-- Dirección del texto. -->
+		<p><bdo dir="rtl">supercalifragilisticoespialidoso</bdo><p>
+		<!-- Texto de mayor y menor tamaño. -->
+		<p>Texto de <small>menor</small> tamaño y texto de <big>mayor</big> tamaño.</p>
+		<!-- Cita o referencia entrecomillada. -->
+		<p>Y el cuervo dijo <q>Nunca más</q>.</p>
+		<!-- Subíndices y superíndices. -->
+		<p>Einstein dijo que E=mc<sup>2</sup> y se tomó un vaso de H<sub>2</sub>O.</p>
+		<!-- Texto de teletipo en espaciado fijo. -->
+		<p>Nuestros abuelos utilizaban el <tt>teletipo</tt>.</p>
+		<!-- Contenedor para cita larga. -->
+		<blockquote>
+			<p>Revista Hola, página 126.</p>
+			<p>Revista Adiós, página 13.</p>
+			<p>Revista Hasta Luego Lucas, página 56.</p>
+		</blockquote>
+		<!-- Un contenedor de carácter general. -->
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu porta neque. Pellentesque efficitur euismod quam ac lacinia. Sed pulvinar, risus a faucibus ultrices, massa mi sodales elit, sit amet dapibus erat ante et ipsum. Pellentesque eu nisl aliquet, fringilla sem eget, convallis magna. Nam ac lectus ut felis malesuada maximus id quis elit. Ut interdum enim eu ligula convallis euismod. Fusce fermentum sodales velit eu finibus. Donec malesuada semper turpis, eu tempus ex aliquet vel. Morbi euismod nisl erat, ut volutpat massa congue sit amet. Sed sit amet orci ac elit laoreet faucibus sed in justo. Suspendisse semper lacus sit amet venenatis semper. Vivamus consequat lectus ex, in elementum metus iaculis sit amet.</p>
+			<p>Phasellus sagittis, ante vel consequat accumsan, enim urna ornare sem, vitae tincidunt felis dolor sit amet nibh. Sed tempor sollicitudin massa nec egestas. Integer tempor metus non tincidunt volutpat. Morbi tortor augue, condimentum et pharetra ut, dapibus a magna. Proin eu ipsum velit. Vestibulum odio odio, lobortis at eros sed, pharetra consequat justo. Phasellus est sapien, sodales a eleifend sit amet, ullamcorper eget odio.</p>
+			<p>Cras at ante lectus. Maecenas consequat velit at diam commodo, at sollicitudin odio congue. Proin dictum ante enim, sit amet elementum nisi fermentum eu. Aliquam erat volutpat. Cras vel commodo tellus. Donec accumsan venenatis rutrum. Donec et eros velit. Curabitur in nibh eleifend, vulputate lorem et, fermentum erat. Morbi malesuada tellus metus, ac suscipit elit luctus id.</p>
+		</div>
+		
+	</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejemplo de do...while</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<script>
+			/* Vamos a solicitar al usuario que introduzca una contraseña y no vamos a dejar que avance hasta que la contraseña introducida sea "1234". */
+			var contraseña;
+			
+			do {
+				contraseña = prompt("Introduzca la contraseña");
+				/* Si queremos complicarnos un poco más la vida, mostramos un mensaje cuando la contraseña es incorrecta. */
+				if ( contraseña != "1234" ) {
+					alert("Contraseña incorrecta");
+				}
+				
+			} while ( contraseña != "1234" );
+			document.write("<p>¡Bienvenido al sistema!</p>");
+			
+		</script>
+		
+	</body>
+
+</html>

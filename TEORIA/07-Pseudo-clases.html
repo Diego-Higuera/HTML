@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejemplos de pseudo-clases</title>
+		<meta charset="utf-8">
+		
+		<style>
+			a:link {
+				color: green;
+				text-decoration: none;
+				font-style: italic;
+				font-family: "Courier New", Courier, monospace;
+			}
+			a:visited {
+				color: red;
+				/* Por motivos de privacidad, la mayoría de las propiedades están vedadas en la pseudo-clase :visited. Sólo se permiten las propiedades relacionadas con el color. Los siguientes cambios, no tendrán efecto. */
+				font-style: normal;
+				font-weight: bold;
+				font-size: 5em;
+			}
+			a:hover {
+				color: orange;
+				font-family: Arial, Helvetica, sans-serif;
+				font-style: normal;
+				font-size: 1.5em;
+				text-decoration: overline;
+			}
+			a:active {
+				color: yellow;
+				text-decoration: line-through;
+				font-size: 0.8em;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<div>
+			Visite <a href="https://www.w3schools.com">nuestra web</a>.
+		</div>
+		
+	</body>
+
+</html>

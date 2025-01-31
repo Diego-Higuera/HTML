@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejemplo de formularios</title>
+		<meta charset="utf-8">
+		
+		<style>
+			form.original input.btn {
+				padding: 0;
+				background-color: transparent;
+				border: 0;
+				color: blue;
+				text-decoration: underline;
+				/* border-bottom: 1px solid blue; */
+				cursor: pointer;
+			}
+			
+			form.original input[type="text"],
+			form.original input[type="password"] {
+				padding: 0.3em;
+			}
+			
+			form.original input[type="text"]:focus,
+			form.original input[type="password"]:focus {
+				font-size: 1.2em;
+				background-color: #FFE4B5;
+			}
+			
+			form.tipo1 label {
+				display: block;
+				margin-top: 0.5em;
+			}
+			
+			form.tipo1 input.btn {
+				display: block;
+				margin-top: 1em;
+			}
+			
+			form.tipo2 div {
+				margin: 0.5em;
+			}
+			
+			form.tipo2 div label {
+				float: left;
+				/* width: 25%; */
+				width: 85px;
+			}
+			
+			form.tipo3 label {
+				display: block;
+				margin-top: 0.5em;
+			}
+			
+			form.tipo3 fieldset {
+				float: left;
+				width: 46%;
+			}
+			
+			form.tipo3 input.btn {
+				clear: left;
+				display: block;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<h1>Ejemplo de formularios</h1>
+		
+		<form class="original" action="foo.php" method="post">
+			<fieldset>
+				<legend>Alta en el servicio</legend>
+				
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre" autofocus />
+				
+				<label for="apellidos">Apellidos</label>
+				<input type="text" id="apellidos" size="50" />
+				
+				<label for="dni">DNI</label>
+				<input type="text" id="dni" size="10" maxlength="9" />
+				
+				<label for="contrasena">Contraseña</label>
+				<input type="password" id="contrasena" />
+				
+				<input class="btn" type="submit" value="Darme de alta" />
+			</fieldset>
+		</form>
+		
+		<form class="tipo1" action="foo.php" method="post">
+			<fieldset>
+				<legend>Alta en el servicio</legend>
+				
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre" />
+				
+				<label for="apellidos">Apellidos</label>
+				<input type="text" id="apellidos" size="50" />
+				
+				<label for="dni">DNI</label>
+				<input type="text" id="dni" size="10" maxlength="9" />
+				
+				<label for="contrasena">Contraseña</label>
+				<input type="password" id="contrasena" />
+				
+				<input class="btn" type="submit" value="Darme de alta" />
+			</fieldset>
+		</form>
+		
+		<form class="tipo2" action="foo.php" method="post">
+			<fieldset>
+				<legend>Alta en el servicio</legend>
+				
+				<div>
+					<label for="nombre">Nombre</label>
+					<input type="text" id="nombre" />
+				</div>
+				
+				<div>
+					<label for="apellidos">Apellidos</label>
+					<input type="text" id="apellidos" size="50" />
+				</div>
+				
+				<div>
+					<label for="dni">DNI</label>
+					<input type="text" id="dni" size="10" maxlength="9" />
+				</div>
+				
+				<div>
+					<label for="contrasena">Contraseña</label>
+					<input type="password" id="contrasena" />
+				</div>
+				
+				<input class="btn" type="submit" value="Darme de alta" />
+			</fieldset>
+		</form>
+		
+		<form class="tipo3" action="foo.php" method="post">
+			<fieldset>
+				<legend>Alta en el servicio</legend>
+				
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre" />
+				
+				<label for="apellidos">Apellidos</label>
+				<input type="text" id="apellidos" size="50" />
+				
+				<label for="dni">DNI</label>
+				<input type="text" id="dni" size="10" maxlength="9" />
+				
+				<label for="contrasena">Contraseña</label>
+				<input type="password" id="contrasena" />
+				
+			</fieldset>
+			<fieldset>
+				<legend>Datos de contacto</legend>
+				
+				<label for="telefono">Telefono</label>
+				<input type="text" id="telefono" />
+				
+				<label for="email">Email</label>
+				<input type="text" id="email" size="50" />
+				
+				<label for="direccion">Dirección</label>
+				<input type="text" id="direccion" />
+				
+				<label for="codigo-postal">Código postal</label>
+				<input type="text" id="codigo-postal" />
+				
+			</fieldset>
+			
+			<input class="btn" type="submit" value="Darme de alta" />
+		</form>	
+		
+		
+	</body>
+	
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Propiedades y métodos de String (texto)</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<script>
+			/* Vamos a pedir una cadena de caracteres para trabajar con ella. */
+			var frase = prompt("Escribe una frase");
+			document.write("<div>Frase original: " + frase + "</div>");
+			
+			/* La única propiedad de String es length, que nos devuelve el número de caracteres de la cadena. Para acceder a las propiedades y los métodos de un objeto, utilizamos el operador punto, por ejemplo, objeto.propiedad */
+			var longitud = frase.length;
+			document.write("<div>Total de caracteres: " + longitud + "</div>");
+			
+			/* charAt() nos devuelve el caracter que hay en una posición determinada de la cadena. Estas posiciones empiezan por cero. */
+			var primeraLetra = frase.charAt(0);
+			document.write("<div>Primera letra: " + primeraLetra + "</div>");
+			
+			/* Otra forma de acceder a un caracter de la cadena consiste en tratar esta como array de caracteres. */
+			var otraPrimera = frase[0];
+			document.write("<div>Otra primera: " + otraPrimera + "</div>");
+			
+			/* indexOf() nos devuelve la posición (empezando por cero) de la primera aparición de un caracter en la cadena. Si no se encuentra el caracter, el método devuelve -1. */
+			var buscar = "c";
+			var posicion = frase.indexOf(buscar);
+			if ( posicion == -1 ) {
+				document.write("<div>La letra " + buscar + " no se encuentra en la frase.</div>");
+			} else {
+				document.write("Posición de la letra " + buscar + ": " + posicion);
+			}
+			
+			/* Ahora, me hago la pregunta del millón. Con este método sé la posición de la primera aparición de la letra. ¿Cómo podría saber en qué posición están todas las letras buscadas en la frase? */
+			posicion = frase.indexOf(buscar);
+			while ( posicion != -1 ) {
+				document.write("<div>" + posicion + "</div>");
+				posicion = frase.indexOf(buscar, posicion+1);
+			}
+			
+			/* replace() sustituye la primera aparición de una cadena de búsqueda por otra dentro de la cadena original. */
+			var reemplazar = frase.replace("sol", "astro");
+			document.write("<div>Nueva frase: " + reemplazar + "</div>");
+			/* Disponemos también del método replaceAll() que hace todas las sustituciones. */
+			
+			/* split() crea un array a partir de una cadena separándola por el separador especificado en el método. */
+			var palabras = frase.split(" ");
+			for ( i=0; i<palabras.length; i++ ) {
+				document.write("<div>" + palabras[i] + "</div>");
+			}
+			
+			/* substring() extrae una subcadena de la cadena de caracteres. Los parámetros de este método indican la primera posición a extraer (incluida) y la última (no incluida). */
+			var subcadena = frase.substring(2,4);
+			document.write("<div>Subcadena: " + subcadena + "</div>");
+			/* En realidad, tenemos tres métodos para extraer un fragmento de texto de una cadena:
+				slice(start, end)
+				substring(start, end)
+				substr(start, length)
+			*/
+			
+			/* toLowerCase() y toUpperCase() devuelven la cadena de caracteres respectivamente en minúsculas y mayusculas. */
+			var minusculas = frase.toLowerCase();
+			document.write("<div>Minúsculas: " + minusculas + "</div>");
+			var mayusculas = frase.toUpperCase();
+			document.write("<div>Mayúsculas: " + mayusculas + "</div>");
+			
+			/* El método toString() está presente en todos los objetos y sirve para convertirlos en cadenas. */
+			var numero = 777;
+			var cadena = numero.toString();
+			document.write("<div>" + cadena + "</div>");
+			
+			/* El método concat() permite concatenar a una cadena uno o varios fragmentos de texto más. Ya hemos visto como hacer algo similar con los operadores de concatenación +. */
+			var concatenar = frase.concat(" es ", "tu ", "frase");
+			document.write("<div>" + concatenar + "</div>");
+			
+			/* El método trim() recorta espacios innecesarios al principio y al final de una cadena de caracteres. También tenemos los métodos trimStart() y trimEnd() que recortan espacios respectivamente al principio y al final de la cadena. */
+			var texto = "       Hola mundo       ";
+			texto = texto.trim();
+			document.write("<pre>*" + texto + "*</pre>");
+			
+			/* repeat() devuelve un String con la cadena de caracteres repetida el número de veces especificado en el método. */
+			var miTexto = "monja";
+			document.write("<div>" + miTexto.repeat(5) + "</div>");
+			
+			/* Los métodos padStart() y padEnd() rellenan un texto con un caracter de relleno especificado en el segundo parámetro, hasta alcanzar una longitud especificada en el primer parámetro. El relleno se produce respectivamente al principio o al final del texto. */
+			var rellenar = "666";
+			document.write("<div>" + rellenar.padStart(10,"0") + "</div>");
+			
+		</script>
+		
+	</body>
+
+</html>

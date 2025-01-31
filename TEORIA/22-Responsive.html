@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejemplo de responsive</title>
+		<meta charset="utf-8">
+
+		<!-- meta para móviles. -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+		
+		<style>
+		
+			/* Propiedades generales y propiedades que se van a aplicar a todos los tamaños posibles del dispositivo. */
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 2em;
+				font-weight: bold;
+				
+				/* El color de fondo cambiará con cada tramo del responsive. */
+				background-color: #5dade2;
+			}
+			
+			/* Empezamos ajustando las cajas div al ancho de la página, dando un pequeño margen para separarlas de los laterales y vamos a establecer un alto fijo para cada caja. */
+			
+			div {
+				margin: 2%;
+				height: 120px;
+				background-color: #fad7a0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			
+			/* Propiedades a aplicar para dispositivos tablet a partir de una anchura de 768px. */
+			
+			@media (min-width: 768px) {
+				body {
+					background-color: #ec7063;
+					display: flex;
+					justify-content: space-around;
+					flex-wrap: wrap;
+				}
+				
+				div {
+					width: 46%;
+				}
+			}
+			
+			
+			/* Tamaño laptop o escritorio. */
+			
+			@media (min-width: 1360px) {
+				body {
+					background-color: #52be80;
+				}
+				
+				div {
+					width: 21%;
+				}
+			}
+		
+		</style>
+		
+	</head>
+	
+	<body>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	</body>
+
+</html>

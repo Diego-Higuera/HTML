@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Menús de navegación</title>
+		<meta charset="utf-8">
+		
+		<style>
+			/* Definimos la anchura del menú. */
+			/* Luego, eliminamos viñetas, márgenes, y espaciados aplicados por defecto. */
+			/* Añadir un borde al menú de navegación y establecer el color de fondo y los bordes de cada elemento del menú. */
+			ul.vertical {
+				width: 180px;
+				
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				
+				border: 1px solid #7C7C7C;
+				border-bottom: none;
+			}
+			
+			ul.vertical li {
+				background: #F4F4F4;
+				border-bottom: 1px solid #7C7C7C;
+				border-top: 1px solid #FFF;
+			}
+			
+			/* Aplicar estilos a los enlaces: mostrarlos como un elemento de bloque para que ocupen todo el espacio de cada li del menú, añadir un espacio de relleno y modificar los colores y la decoración por defecto */
+			ul.vertical li a {
+				color: #333;
+				display: block;
+				padding: .2em 0 .2em .5em;
+				text-decoration: none;
+			}
+			
+			
+			
+			/* Aplicar los estilos CSS básicos para establecer el estilo del menú (similares a los del menú vertical anterior). */
+			ul.horizontal {
+				background: #F4F4F4;
+				border: 1px solid #7C7C7C;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			ul.horizontal li a {
+				color: #333;
+				display: block;
+				padding: .3em;
+				text-decoration: none;
+			}
+			
+			/* Establecer la anchura de los elementos del menú. Como el menú es de anchura variable y contiene cinco elementos, se asigna una anchura del 20% a cada elemento. Si se quiere tener un control más preciso sobre el aspecto de cada elemento, es necesario asignar una anchura fija al menú. Además, se posiciona de forma flotante los elementos de la lista mediante la propiedad float. Esta es la clave de la transformación de una lista en un menú horizontal. */
+			ul.horizontal li {
+				float: left;
+				width: 20%;
+			}
+
+			/* Al poner todos los elementos del menú flotantes, se salen de la caja que los contiene (el ul) de manera que este se queda sin contenido y, por lo tanto, toma una altura de cero. Este es el truco para resolver ese problema. */
+			ul.horizontal {
+				overflow: hidden;
+			}
+
+			/* Establecer los bordes de los elementos que forman el menú. */
+			ul.horizontal li a {
+				border-left: 1px solid #FFF;
+				border-right: 1px solid #7C7C7C;
+			}
+
+			ul.horizontal li a.sinborde {
+				border-right: none;
+			}
+
+		</style>
+		
+	</head>
+	
+	<body>
+		<h1>Menús de navegación</h1>
+		
+		<h2>Menú vertical</h2>
+		
+		<ul class="vertical">
+			<li><a href="#">Elemento 1</a></li>
+			<li><a href="#">Elemento 2</a></li>
+			<li><a href="#">Elemento 3</a></li>
+			<li><a href="#">Elemento 4</a></li>
+			<li><a href="#">Elemento 5</a></li>
+			<li><a href="#">Elemento 6</a></li>
+		</ul>
+		
+		<h2>Menú horizontal</h2>
+		
+		<ul class="horizontal">
+			<li><a href="#">Elemento 1</a></li>
+			<li><a href="#">Elemento 2</a></li>
+			<li><a href="#">Elemento 3</a></li>
+			<li><a href="#">Elemento 4</a></li>
+			<li><a href="#" class="sinborde">Elemento 5</a></li>
+		</ul>
+		
+		
+		
+	</body>
+	
+</html>

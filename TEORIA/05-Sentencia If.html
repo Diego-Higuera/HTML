@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Estructura de control if</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<script>
+			/* Voy a desarrollar un script que le pida un número al usuario y responda si dicho número es positivo, negativo o cero. Aprovechamos la ocasión para mostrar algunas funciones interesantes más de Javascript. */
+			
+			/* La función prompt sirve para pedir al usuario que introduzca un valor por el teclado. Pero ojo. El valor que se lee de un prompt SIEMPRE es una cadena de caracteres. Si quiero que se comporte como un número, tengo que convertirlo a tal. Para ello, utilizaremos la función parseInt que convierte un texto a un entero. */
+			var valor = prompt("Escribe un número y te diré si es positivo, negativo o cero.");
+			var numero = parseInt(valor);
+			document.write("<p>El número es: " + numero + "</p>");
+			
+			/* A continuación, vamos a ver si el número es mayor que cero, menor que cero o cero. Podemos analizarlo en cualquier orden. */
+			if ( numero > 0 ) {
+				document.write("<p>El número es positivo (mayor que cero).</p>");
+			} else {
+				/* Si el número no es mayor que cero significa que o bien es menor que cero o bien es cero. */
+				if ( numero < 0 ) {
+					document.write("<p>El número es negativo (menor que cero).</p>");
+				} else {
+					/* Si no es positivo ni negativo, no queda más remedio que sea el propio cero. */
+					document.write("<p>El número es cero.</p>");
+				}
+			}
+			
+			
+			
+		</script>
+		
+	</body>
+
+</html>

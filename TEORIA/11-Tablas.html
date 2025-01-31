@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>CSS para tablas</title>
+		<meta charset="utf-8">
+		
+		<style>
+		
+			table, tr, th, td {
+				border: 1px solid black;
+			}
+			
+			table.separado {
+				border-collapse: separate;
+			}
+			table.colapsado {
+				border-collapse: collapse;
+			}
+			
+			table.separacion {
+				border-spacing: 50px 5px;
+			}
+			
+			table.mostrar {
+				empty-cells: show;
+			}
+			table.ocultar {
+				empty-cells: hide;
+			}
+			
+			table.leyenda {
+				caption-side: bottom;
+			}
+			table.leyenda caption {
+				color: blue;
+				font-size: 0.5em;
+				font-style: italic;
+				text-align: left;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<h1>Ejemplos de tabla</h1>
+		
+		<h2>Tabla con bordes separados</h2>
+		
+		<table class="separado">
+			<tbody>
+				<tr>
+					<td>A1</td>
+					<td>B1</td>
+				</tr>
+				<tr>
+					<td>A2</td>
+					<td>B2</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2>Tabla con bordes colapsados</h2>
+
+		<table class="colapsado">
+			<tbody>
+				<tr>
+					<td>A1</td>
+					<td>B1</td>
+				</tr>
+				<tr>
+					<td>A2</td>
+					<td>B2</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>Separación entre celdas</h2>
+
+		<table class="separacion">
+			<tbody>
+				<tr>
+					<td>A1</td>
+					<td>B1</td>
+				</tr>
+				<tr>
+					<td>A2</td>
+					<td>B2</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>Mostrar celdas vacías</h2>
+		
+		<table class="mostrar">
+			<tbody>
+				<tr>
+					<td></td>
+					<td>B1</td>
+					<td>C1</td>
+				</tr>
+				<tr>
+					<td>A2</td>
+					<td></td>
+					<td>C2</td>
+				</tr>
+				<tr>
+					<td>A3</td>
+					<td>B3</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>Ocultar celdas vacías</h2>
+
+		<table class="ocultar">
+			<tbody>
+				<tr>
+					<td></td>
+					<td>B1</td>
+					<td>C1</td>
+				</tr>
+				<tr>
+					<td>A2</td>
+					<td>&nbsp;</td>
+					<td>C2</td>
+				</tr>
+				<tr>
+					<td>A3</td>
+					<td>B3</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2>Posición de la leyenda</h2>
+		
+		<table class="leyenda">
+			<caption>Leyenda de la tabla</caption>
+			<tbody>
+				<tr>
+					<td>A1</td>
+					<td>B1</td>
+					<td>C1</td>
+				</tr>
+				<tr>
+					<td>A2</td>
+					<td>B2</td>
+					<td>C2</td>
+				</tr>
+				<tr>
+					<td>A3</td>
+					<td>B3</td>
+					<td>C3</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+	</body>
+
+</html>

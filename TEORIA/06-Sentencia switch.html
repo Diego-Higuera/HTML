@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejemplo de switch</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<script>
+		
+			/* Vamos a desarrollar un ejercicio en el que pediremos el valor de una nota al usuario (0-10) y, mediante una estructura switch, la convertiremos en palabras mediante el siguiente baremo:
+			
+			0, 1, 2 --> Muy deficiente.
+			3, 4    --> Insuficiente.
+			5       --> Suficiente.
+			6, 7    --> Bien.
+			8, 9    --> Notable.
+			10      --> Sobresaliente.
+			
+			Cualquier nota que no coincida con este rango, no es válida. */
+			
+			/* Primero, pido la nota por teclado. Aunque, recordemos que prompt siempre devuelve una cadena de texto. */
+			var notaTexto = prompt("Introduzca la nota (0-10)");
+			/* Convertimos la nota a número entero. */
+			var nota = parseInt(notaTexto);
+			
+			/* Ahora, comparamos la nota con sus distintos valores para indicar con palabras su equivalencia. */
+			switch ( nota ) {
+				case 0:
+				case 1:
+				case 2:
+					document.write("Muy deficiente.");
+					break;
+				case 3:
+				case 4:
+					document.write("Insuficiente.");
+					break;
+				case 5:
+					document.write("Suficiente.");
+					break;
+				case 6:
+				case 7:
+					document.write("Bien.");
+					break;
+				case 8:
+				case 9:
+					document.write("Notable.");
+					break;
+				case 10:
+					document.write("Sobresaliente.");
+					break;
+				default:
+					document.write("El valor de la nota es incorrecto.");
+			}
+		
+		</script>
+		
+	</body>
+
+</html>

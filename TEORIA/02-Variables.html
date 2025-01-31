@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Variables en Javascript</title>
+		<meta charset="utf-8">
+		
+		<script>
+			function miFuncion() {
+				/* Una variable declarada en un ámbito acotado como es el de una función, es una variable local. Dicha variable solo estará disponible en el entorno en el que ha sido declarada. */
+				var soyLocal = 18;
+				/* Dentro de la función, la variable es accesible. */
+				document.write("<p>Local en función: " + soyLocal + "</p>");
+				
+				/* Pero, si declaramos una variable SIN la palabra clave var, ésta será de ámbito global independientemente de dónde se encuentre. */
+				tambienGlobal = 66;
+			}
+		</script>
+
+		<script>
+			document.write("<p>Hola a todos.</p>");
+			/* Aunque una variable global es accesible desde cualquier punto de la página, en este momento, la variable soyGlobal todavía no existe. No ha sido declarada. Por lo tanto, no podemos mostrarla. */
+			document.write("<p>Global en el head: " + soyGlobal + "</p>");
+			/* Cuando se produce un error, el resto del script deja de ejecutarse. */
+			document.write("<p>La sentencia anterior da error.</p>");
+		</script>
+		
+	</head>
+	
+	<body>
+		
+		<script>
+			/* Declaramos una variable precediendo su nombre de la palabra clave var. Podemos separar declaración e inicialización en dos sentencias... */
+			var operando1;
+			operando1 = 7;
+			/* ...o bien, hacerlo todo junto. */
+			var operando2 = 14;
+			
+			/* De forma genérica consideramos tres tipos de datos para nuestras variables. Numéricos: */
+			var numeroEntero = 17;
+			var numeroDecimal = 34.567;
+			/* Cadenas de caracteres (siempre encerradas entre comillas simples o dobles. */
+			var nombre = "Manolito";
+			var numeroTelefono = "666123456";
+			/* Booleanos (verdadero/falso, true/false). */
+			var respuesta = true;
+		</script>
+		
+		<script>
+			/* Las variables que se declaran en una página son accesibles desde cualquier lugar de dicha página. Por lo tanto, su ámbito es global. */
+			var soyGlobal = 13;
+		</script>
+		
+		<script>
+			document.write("<p>Variable global: " + soyGlobal + "</p>");
+		</script>
+		
+		<script>
+			/* Para que el código de una función se ejecute, tengo que llamar a dicha función utilizando su nombre. */
+			miFuncion();
+		</script>
+
+		<script>
+			document.write("<p>Variable local: " + soyLocal + "</p>");
+		</script>
+		
+		<script>
+			document.write("<p>También global: " + tambienGlobal + "</p>");
+		</script>
+		
+	</body>
+
+</html>

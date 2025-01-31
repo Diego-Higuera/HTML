@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>CSS en listas</title>
+		<meta charset="utf-8">
+		
+		<style>
+			ul.cuadrados {
+				list-style-type: square;
+			}
+			
+			li.fuera {
+				list-style-position: outside;
+			}
+			li.dentro {
+				list-style-position: inside;
+			}
+			
+			ul.imagen {
+				list-style-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDjYer1E5_IITG6znPW554DHmojfXZ4CgcTA&usqp=CAU");
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<ul class="cuadrados">
+			<li>Una libra de pan.</li>
+			<li>Un litro de leche.</li>
+			<li>Mantequilla.</li>
+		</ul>
+		
+		<ul>
+			<li class="fuera">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed diam porta, tincidunt turpis consectetur, mattis nisi. Duis dictum vehicula metus fringilla mattis. Aliquam nunc lacus, mattis sed tincidunt quis, tincidunt et metus. Curabitur iaculis velit id ante sagittis bibendum. Nunc blandit ac lacus id mollis. Quisque lectus libero, feugiat vitae lobortis non, cursus in nibh. Sed nec eleifend urna. Nam vitae cursus felis. Nam a magna vel nisl lobortis mollis. Integer sollicitudin porta neque. Aenean gravida, magna quis vestibulum aliquet, ante lacus eleifend nulla, ultrices porta orci turpis in nulla. Cras tempus pellentesque urna aliquet pellentesque. Vestibulum ac tellus ante. Nulla facilisi. Proin tincidunt lobortis urna at ultrices.</li>
+
+			<li class="dentro">Nam interdum, dui vel tempor malesuada, dolor arcu eleifend lorem, vitae eleifend sapien mi non erat. Etiam a tempus ex, nec elementum arcu. Praesent ut mi a enim sagittis pretium ac in nisi. Proin faucibus quis tortor vel fermentum. In vel eleifend metus. In a nulla finibus, bibendum risus at, ornare eros. Nulla sollicitudin, enim et commodo rhoncus, urna nulla convallis turpis, viverra ornare diam leo non enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis ultrices velit ac est sollicitudin, quis aliquet mauris volutpat. Vestibulum sodales aliquam nisl, non bibendum augue viverra quis. Mauris venenatis, ex sed pellentesque aliquam, ante urna faucibus eros, sit amet dapibus urna libero ac justo. Donec vestibulum ut ligula elementum rhoncus. Suspendisse magna nisl, commodo nec orci consectetur, semper auctor sapien. Sed eu neque vel dui scelerisque finibus vel sit amet ligula. Cras in est metus. Morbi eget hendrerit libero.</li>
+		</ul>
+		
+		<ul class="imagen">
+			<li>Primer elemento.</li>
+			<li>Segundo elemento.</li>
+			<li>Tercer elemento.</li>
+		</ul>
+		
+	</body>
+
+</html>

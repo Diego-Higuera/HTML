@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Concatenación y suma</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<script>
+			/* En Javascript tanto el operador de concatenación como el de suma están respresentados por el símbolo +, lo que puede conducir a confusiones. */
+			var numero1 = 7;
+			var numero2 = 3;
+			/* En este caso, el operador + es considerado como la suma aritmética, dado que los dos operandos que relaciona son numéricos. */
+			var suma = numero1 + numero2;
+			document.write(suma);
+			document.write("<br>");
+			
+			var nombre = "Manolo";
+			var apellido = "García";
+			/* En este caso, como estoy trabajando con cadenas, el operador + significa concatenación. Ojo, que los espacios no se crean solos mágicamente. */
+			var concatenacion = nombre + " " + apellido;
+			document.write(concatenacion);
+			document.write("<br>");
+			
+			/* Mucho cuidado cuando intercalemos unos tipos de datos con otros. Cuando mezclamos textos y números, Javascript detecta que nos encontramos en un entorno de cadena de caracteres y, por lo tanto, interpreta los operadores + como concatenación. */
+			document.write("<p>La suma de " + numero1 +" y " + numero2 + " es: " + numero1 + numero2 + "</p>");
+			/* Podemos solucionar este problema, utilizando paréntesis. */
+			document.write("<p>La suma de " + numero1 +" y " + numero2 + " es: " + (numero1 + numero2) + "</p>");
+		</script>
+		
+	</body>
+
+</html>

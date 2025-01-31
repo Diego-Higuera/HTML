@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Modelo de cajas</title>
+		<meta charset="utf-8">
+		
+		<style>
+			/* Se suele utilizar este truco para tomar el control de los dimensionamientos de las cajas. */
+			* {
+				margin: 0;
+				padding: 0;
+				
+				/* Esta propiedad hace que los valores de anchura hagan referencia al contenido + el padding + el borde de una caja, en lugar de solo referir al contenido. */
+				box-sizing: border-box;
+			}
+			
+			p.primero {
+				width: 80%;
+				background-color: #52be80;
+				padding: 2em;
+				/* Un truco que nos permite centrar una caja en su contenedor, diciéndole al navegador que calcule automáticamente los márgenes izquierdo y derecho. */
+				margin: auto;
+				margin-top: 1em;
+				margin-bottom: 1em;
+			}
+			
+			p.segundo {
+				background-color: #f1c40f;
+				padding: 2em;
+				margin: 1em;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<p class="primero">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id lectus neque. Integer vel sodales ante. Sed sed ligula venenatis, tempus purus vel, porttitor ipsum. Curabitur vel arcu eget lacus luctus consectetur quis ut diam. In nec eros aliquam, condimentum urna at, dapibus magna. Curabitur tincidunt imperdiet purus ut scelerisque. Vivamus venenatis est elit, eget tempus metus dignissim sed. Sed sed quam a augue ultrices porttitor in sit amet lectus. Sed consequat orci turpis, et laoreet nunc finibus nec. Cras facilisis augue at pharetra pretium. Duis dolor nunc, scelerisque ac ex non, fermentum sagittis mauris. Nunc a lectus id ligula auctor rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		
+		<p class="segundo">Curabitur ex lorem, pulvinar dignissim fringilla sed, commodo ac sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ut viverra urna. Suspendisse euismod maximus sem, a consequat neque porta posuere. Etiam sit amet libero nisi. Maecenas erat risus, mollis ac viverra id, accumsan eu lectus. Phasellus a dictum augue. Proin sed elementum eros. Proin ut semper odio. Ut hendrerit elit eu nibh mattis, at viverra nisl blandit. Sed egestas pretium quam vitae venenatis. Quisque sed sapien suscipit, ornare libero vel, pretium lectus. Quisque fringilla varius nulla, sit amet facilisis felis tristique tempor. Vivamus iaculis odio ac eros maximus, in congue dui tincidunt.</p>
+		
+	</body>
+
+</html>

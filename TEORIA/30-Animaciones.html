@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejemplo de animaciones</title>
+		<meta charset="utf-8">
+		
+		<style>
+			div.animacion {
+				width: 15%;
+				position: relative;
+				
+				animation-name: coche;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+			}
+			div.animacion img {
+				width: 100%;
+			}
+			
+			@keyframes coche {
+				from {
+					left: 0;
+				}
+				50% {
+					left: 100px;
+				}
+				to {
+					left: 900px;
+				}
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+
+		<div class="animacion">
+			<img src="https://img.freepik.com/vector-premium/ilustracion-vector-color-icono-coche-epoca_755164-2105.jpg?w=740" alt="coche" />
+		</div>
+		
+	</body>
+
+</html>

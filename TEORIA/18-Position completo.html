@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Mi página web</title>
+		
+		<meta charset="utf-8">
+		
+		<!-- Añadimos un meta para la correcta visualización en dispositivos smartphone -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+		
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			header{
+				background-color: rgba(255,0,0,1);
+				padding: 1em;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+			}
+			header h1 {
+				text-align: center;
+				margin-bottom: 0.3em;
+			}
+			h2 {
+				margin: 1em;
+			}
+			h2#arriba {
+				margin-top: 120px;
+			}
+			p {
+				margin: 1em;
+			}
+			
+			/* Transformamos el menú en un menú horizontal. */
+			ul {
+				list-style-type: none;
+				width: 300px;
+				/* border: 1px solid black;
+				overflow: hidden; */
+			}
+			
+			ul li {
+				width: 32.5%;
+				float: left;
+				text-align: center;
+				/* border-right: 1px solid black; */
+				position: relative;
+				border: 1px solid black;
+			}
+
+			ul li:last-child {
+				/* border-right: none; */
+			}
+			ul li a {
+				text-decoration: none;
+				color: white;
+				font-weight: bold;
+				display: block;
+				/* border-bottom: 1px solid black; */
+				
+			}
+			ul li a:hover {
+				color: red;
+			}
+			ul li ul {
+				position: absolute;
+				top: 18px;
+				left: -1px;
+				width: 100%;
+				border: 1px solid black;
+				background-color: rgb(255,0,0);
+				display: none;
+			}
+			ul li ul li {
+				float: none;
+				border: none;
+				border-bottom: 1px solid black;
+				width: auto;
+			}
+			ul li ul li:last-child {
+				border-bottom: none;
+			}
+			ul li:hover ul {
+				display: block;
+			}
+			ul li ul li a {
+				padding: 0.5em;
+			}
+			ul li ul li a:hover {
+				color: black;
+			}
+			
+			
+		</style>
+		
+		
+	</head>
+	
+	<body>
+		<header>
+			<h1>Título de la página</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Menú 1</a>
+						<ul>
+							<li><a href="">Opción 1</a></li>
+							<li><a href="">Opción 2</a></li>
+							<li><a href="">Opción 3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Menú 2</a>
+						<ul>
+							<li><a href="">Opción 1</a></li>
+							<li><a href="">Opción 2</a></li>
+							<li><a href="">Opción 3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Menú 3</a>
+						<ul>
+							<li><a href="">Opción 1</a></li>
+							<li><a href="">Opción 2</a></li>
+							<li><a href="">Opción 3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<h2 id="arriba">Lorem ipsum</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere volutpat, dignissim varius tristique proin cras fringilla integer. Placerat congue lectus fusce cum mauris tristique nec volutpat mollis sem mi turpis pretium semper, dui sodales faucibus luctus tincidunt imperdiet risus egestas molestie fringilla torquent vehicula parturient. Egestas cubilia nibh vivamus scelerisque hendrerit aenean magna, vel tempor cursus nulla duis eleifend, donec dictum quis arcu sem fermentum.</p>
+		<p>Tristique volutpat proin egestas placerat mattis per sodales, pulvinar sed commodo justo hendrerit hac habitasse at, urna curabitur pretium suspendisse primis interdum. Rhoncus augue euismod ullamcorper erat elementum velit dictumst tortor dui justo vitae, commodo lectus fusce eros netus sapien cum semper fames. Accumsan leo integer platea suscipit convallis non morbi etiam fusce montes sodales, netus conubia tristique laoreet molestie cras tempor sagittis torquent. Conubia a tempus id suscipit feugiat lacus sodales platea ullamcorper, viverra semper morbi ornare donec magna felis nisl, luctus maecenas facilisis lacinia varius sapien at fringilla.</p>
+		<p>Non dapibus ullamcorper in taciti donec nibh molestie risus platea mattis, praesent feugiat dis magna phasellus viverra sapien suspendisse nec. Arcu ligula purus vitae taciti dictum neque aliquam conubia dis, ullamcorper auctor blandit aliquet risus hac gravida massa nam diam, cubilia velit sociis imperdiet orci dapibus mollis aptent. Magna rhoncus nulla cum vulputate congue nostra a conubia, ullamcorper gravida natoque tincidunt aptent senectus nisi feugiat praesent, imperdiet laoreet lobortis nullam pharetra augue rutrum. Suspendisse varius praesent urna tempor erat aliquet morbi, condimentum ullamcorper fames commodo nibh ultricies non, suscipit ante primis fermentum dapibus quam.</p>
+		<p>Suscipit ultrices non quis aliquet in fermentum ac commodo sociis varius, vivamus nisl natoque aptent placerat mi ad sed. Rutrum viverra sodales porta quis consequat donec convallis proin, fringilla et per netus libero pellentesque magnis eget rhoncus, facilisi conubia cubilia etiam erat parturient commodo. Potenti luctus odio libero cum ut nulla nisl, curabitur vitae scelerisque phasellus facilisis massa, aptent ac vel consequat non suscipit. Eros inceptos hendrerit urna tellus eu penatibus velit, neque non ad eget mollis lobortis.</p>
+		<p>Semper montes augue sagittis blandit aliquam quam felis magna posuere sociis, curabitur bibendum fermentum dictum torquent enim aliquet velit potenti urna libero, neque molestie ultrices fusce ligula ut arcu diam nulla. Magnis nam nulla ligula ultrices sed per vitae platea, habitasse vehicula aliquam malesuada natoque dignissim tempor, semper dui netus facilisis imperdiet ante nullam. Semper bibendum tempor laoreet habitant facilisis litora cursus placerat venenatis, fermentum at inceptos est eget tortor natoque nibh sapien gravida, et maecenas nisl malesuada molestie auctor neque quam.</p>
+		<p>Senectus commodo molestie viverra montes arcu id ultrices sed cras, aptent himenaeos pharetra lacinia elementum rhoncus sagittis diam, habitasse posuere urna eleifend nunc maecenas cum parturient. Curae nostra sociosqu fermentum id suscipit ad inceptos cursus risus volutpat, potenti tempor erat velit pellentesque placerat urna aptent porttitor aliquam maecenas, ridiculus faucibus sociis diam ut praesent senectus varius nisi. Nec torquent tempus a ac iaculis dictumst sed fusce leo lobortis, facilisi rhoncus aliquam proin aliquet lectus nam tempor felis, congue placerat urna cubilia volutpat luctus sodales tellus suspendisse. Hendrerit penatibus tristique eros ultrices aptent velit semper venenatis, augue conubia ornare litora arcu vehicula auctor nec, leo vitae at lacus fringilla sagittis ullamcorper.</p>
+		<p>Vehicula magna penatibus tincidunt congue lacus nulla eu, fringilla ad iaculis nunc maecenas imperdiet curae, malesuada in etiam tellus gravida dictumst. Aenean consequat erat eget suspendisse volutpat nam tristique, nulla blandit nunc convallis litora inceptos, velit leo arcu sollicitudin fermentum mauris. Nibh sollicitudin suscipit justo mauris fusce aenean aliquet duis praesent donec, ante eu congue libero et aptent sociis in. Tempor integer fames pellentesque senectus tristique etiam convallis primis aptent, quis nisl lectus bibendum per malesuada magna habitant, mus nam interdum vel laoreet ac nostra litora.</p>
+		<p>Iaculis nam faucibus fusce magnis porttitor vivamus elementum facilisi, sapien cras etiam dis et dictumst sociis, turpis quisque curae a convallis sociosqu eget. Nisi mollis imperdiet libero odio auctor convallis facilisis erat, ante tempus torquent cras interdum magnis ligula, quis commodo consequat nunc proin sem ultricies. Est tincidunt nascetur rhoncus ac quisque non mi gravida porta, imperdiet odio sem class fermentum habitasse dapibus sed cras, convallis morbi nunc ad turpis nulla risus senectus. Commodo habitant mollis volutpat integer montes laoreet scelerisque egestas aptent vel porta, risus tempus potenti mus ultricies ac dapibus quam euismod leo. Erat et justo egestas euismod interdum ante condimentum, eros leo parturient pharetra mauris tempus fames class, dui natoque porta ridiculus luctus venenatis.</p>
+		<p>Praesent massa felis porta leo porttitor mollis pharetra himenaeos, elementum congue nunc fringilla dignissim malesuada ac vitae, senectus curabitur nisl eu hendrerit consequat lacus. Lobortis habitasse vel maecenas fringilla ante interdum cras natoque magna libero quis metus, pretium at per felis sodales tristique semper convallis est facilisis curae elementum scelerisque, lectus penatibus consequat neque mauris phasellus massa ad montes mus porttitor. Nisi dui sollicitudin semper posuere magna fringilla aliquet maecenas suscipit phasellus, malesuada arcu tempus augue eros molestie feugiat mi faucibus tortor, hac rutrum neque convallis morbi netus et curae ridiculus.</p>
+		<p>Euismod placerat mi turpis integer dictumst accumsan, dignissim nisl iaculis eleifend vitae egestas id, odio hac curabitur sociosqu est. Mattis natoque ac taciti tristique tempus ligula habitant, venenatis cum ornare justo pharetra vehicula placerat, accumsan mi fames bibendum porttitor donec. Vehicula faucibus magnis hendrerit iaculis cum penatibus nulla cursus, mattis litora commodo ultricies tincidunt molestie mauris ultrices, ad ornare per porta eget luctus mollis. Sagittis ultrices porta egestas accumsan phasellus aliquet vestibulum mauris ac volutpat, feugiat facilisis lectus sollicitudin hendrerit aptent nullam sociis purus gravida quisque, nec praesent dis class justo platea netus iaculis molestie.</p>		
+	</body>
+	
+</html>

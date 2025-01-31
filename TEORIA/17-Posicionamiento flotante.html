@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Posicionamiento flotante</title>
+		<meta charset="utf-8">
+		
+		<style>
+		
+			div.contenedor {
+				width: 90%;
+				background-color: #f7dc6f;
+				border: 2px solid #7d6608;
+				margin: auto;
+				margin-top: 1em;
+				padding: 1.5em;
+			}
+			
+			img.izquierda {
+				float: left;
+				
+				margin-right: 0.5em;
+			}
+			
+			img.derecha {
+				float: right;
+				
+				margin-left: 0.5em;
+			}
+			
+			p.limpio {
+				clear: right;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<div class="contenedor">
+			<img src="https://picsum.photos/200" alt="" class="izquierda">
+			<img src="https://picsum.photos/200/300" alt="" class="derecha">
+			<p>Nulla ac purus in urna efficitur tincidunt nec ornare turpis. Donec dui massa, scelerisque a leo eget, pretium tristique felis. Nam vel auctor lacus. Nulla dignissim eu justo ac suscipit. Donec quis nibh faucibus, hendrerit ligula vitae, fringilla risus. Vestibulum ullamcorper, libero in accumsan ultrices, ipsum felis congue orci, sed gravida tellus neque luctus risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor ullamcorper elit id cursus. Maecenas ullamcorper dui sed libero elementum ullamcorper. Nulla tempor congue pretium. Nulla ac purus in urna efficitur tincidunt nec ornare turpis. Donec dui massa, scelerisque a leo eget, pretium tristique felis. Nam vel auctor lacus. Nulla dignissim eu justo ac suscipit. </p>
+
+			<p class="limpio">Suspendisse ornare consequat nulla ac tincidunt. Phasellus mattis neque congue finibus interdum. Maecenas auctor ullamcorper risus sed congue. Donec sed pellentesque lorem. Etiam ut venenatis libero. Sed consectetur laoreet elit vel pellentesque. Praesent vel lorem blandit, imperdiet elit vel, luctus enim. Mauris non justo eleifend, consequat nisl at, porttitor enim. Vivamus nunc diam, fringilla vel euismod vitae, congue ut nibh. Vestibulum blandit nec mi ut sollicitudin. Curabitur consectetur euismod est, blandit vulputate dolor scelerisque quis. Donec sed pellentesque lorem. Etiam ut venenatis libero. Sed consectetur laoreet elit vel pellentesque. Praesent vel lorem blandit, imperdiet elit vel, luctus enim. Mauris non justo eleifend, consequat nisl at, porttitor enim. Vivamus nunc diam, fringilla vel euismod vitae, congue ut nibh. Vestibulum blandit nec mi ut sollicitudin. Curabitur consectetur euismod est, blandit vulputate dolor scelerisque quis.</p>
+			
+		</div>
+		
+	</body>
+
+</html>

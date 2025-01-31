@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Caracteres de escape</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<script>
+			/* Recordemos que esto es código HTML. Por lo tanto, el comportamiento es que espacios, saltos de línea, tabuladores, etc. que haya en el código fuente original, no se van a respetar en la ventana del navegador. */
+			document.write("<p>Esto      es un texto \n en dos líneas. Que te lo has creído.</p>");
+			
+			/* Sin embargo, desde el punto de vista de Javascript, ese salto está presente en la cadena de texto. */
+			alert("El cuervo dijo\n \"Nunca más\".");
+		</script>
+		
+	</body>
+
+</html>

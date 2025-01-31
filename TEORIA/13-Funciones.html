@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejemplo de funciones</title>
+		<meta charset="utf-8">
+		
+		<!-- En este script voy a definir todas las funciones que utilizaré más adelante en el cuerpo de la página. -->
+		<script>
+			function bienvenidaSimple() {
+				document.write("<h1>Hola a todos</h1>");
+			}
+			
+			function bienvenidaPersonalizada(nombre) {
+				document.write("<h1>Hola " + nombre + "</h1>");
+			}
+			
+			function bienvenidaSubrayada(nombre,cantidad) {
+				document.write("<h1>Hola " + nombre + "</h1>");
+				for ( i=1; i<=cantidad; i++ ) {
+					document.write("-");
+				}
+				document.write("<br>");
+			}
+			
+			function media(numero1, numero2) {
+				var mediaCalculada = (numero1 + numero2) / 2;
+				return mediaCalculada;
+			}
+			
+		</script>
+		
+	</head>
+	
+	<body>
+		
+		<script>
+		
+			bienvenidaSimple();
+			
+			bienvenidaPersonalizada("Miguel Ángel");
+			
+			var dimeTuNombre = prompt("Dime tu nombre");
+			bienvenidaPersonalizada(dimeTuNombre);
+			
+			bienvenidaSubrayada("Genaro", 20);
+			
+			var calculo = media(7, 3);
+			document.write("<p>La media de 7 y 3 es: " + calculo + "</p>");
+			
+		</script>
+		
+	</body>
+
+</html>

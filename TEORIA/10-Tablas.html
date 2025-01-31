@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejemplo de tablas</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+	
+		<h1>Ejemplos de tablas</h1>
+		
+		<h2>Chocolates El Loro</h2>
+		
+		<table border="1">
+			<caption>Ventas de Chocolates El Loro</caption>
+			
+			<thead>
+				<tr>
+					<th>Producto</th>
+					<th>T1</th>
+					<th>T2</th>
+					<th>Total general</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>Chocolate</td>
+					<td>750 €</td>
+					<td>150 €</td>
+					<td>900 €</td>
+				</tr>
+				<tr>
+					<td>Ositos de goma</td>
+					<td>5100 €</td>
+					<td>1200 €</td>
+					<td>6300 €</td>
+				</tr>
+				<tr>
+					<td>Pan escocés</td>
+					<td>1300 €</td>
+					<td>1100 €</td>
+					<td>2400 €</td>
+				</tr>
+			</tbody>
+			
+			<tfoot>
+				<tr>
+					<th>Total</th>
+					<td>7150 €</td>
+					<td>2450 €</td>
+					<td>9600 €</td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		<h2>Ejemplos de colspan y rowspan</h2>
+		
+		<table border="1">
+			<tbody>
+				<tr>
+					<td colspan="3">A1, B1 y C1</td>
+					<!-- <td>B1</td>
+					<td>C1</td> -->
+				</tr>
+				<tr>
+					<td rowspan="2">A2 y A3</td>
+					<td>B2</td>
+					<td rowspan="2">C2 y C3</td>
+				</tr>
+				<tr>
+					<!-- <td>A3</td> -->
+					<td>B3</td>
+					<!-- <td>C3</td> -->
+				</tr>
+			</tbody>
+		</table>
+		
+	</body>
+
+</html>

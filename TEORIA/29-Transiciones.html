@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejemplo de transiciones</title>
+		<meta charset="utf-8">
+		
+		<style>
+			div {
+				width: 300px;
+				height: 300px;
+				background-color: #cb4335;
+				margin: 3em;
+				position: relative;
+			}
+			
+			div {
+				left: 0;
+				width: 300px;
+				background-color: #cb4335;
+				
+				transition: left 2s 0.5s,
+							width 4s 1s,
+							background-color 4s;
+			}
+			
+			div:hover {
+				left: 250px;
+				width: 500px;
+				background-color: #5dade2;
+				
+				transition: left 2s 0.5,
+							width 2s 1s,
+							background-color 4s;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<div></div>
+		
+	</body>
+
+</html>
